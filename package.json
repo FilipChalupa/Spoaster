@@ -1,0 +1,23 @@
+{
+  "name": "Spoaster",
+  "version": "0.1.0",
+  "author": "Filip Chalupa <chalupa.filip@gmail.com>",
+  "respository": {
+    "type": "git",
+    "url": "https://github.com/Onset/Spoaster"
+  },
+  "keywords": [
+    "Spotify",
+    "toast",
+    "notifications",
+    "Windows"
+  ],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "node-notifier": "^4.2.3",
+    "path": "^0.11.14"
+  },
+  "license": "MIT"
+}
