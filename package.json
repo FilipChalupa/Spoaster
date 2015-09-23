@@ -13,7 +13,7 @@
     "Windows"
   ],
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js --debug"
   },
   "dependencies": {
     "node-notifier": "^4.2.3",
