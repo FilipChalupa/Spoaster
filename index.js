@@ -17,6 +17,9 @@ if (process.argv.indexOf('-v') !== -1 || process.argv.indexOf('--version') !== -
 	return 0
 }
 
+
+console.log('Spoaster - Spotify toast notifier is running.')
+
 if (process.argv.indexOf('-d') !== -1 || process.argv.indexOf('--debug') !== -1) {
 	DEBUG = true
 	debugLog('Debug mode\n')
@@ -89,7 +92,7 @@ function watchChange() {
 		})
 
 		if (spotifyClosed) {
-			debugLog('\nSpotify is closed.\nWait for new PID.')
+			debugLog('\nSpotify is closed.\nWaiting for new PID.')
 			resetState()
 			getPID()
 		} else {
