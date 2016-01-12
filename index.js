@@ -85,7 +85,8 @@ function watchChange() {
 				notifier.notify({
 					'title': 'Spotify',
 					'message': name,
-					'icon': path.join(__dirname, 'logo.png')
+					'icon': path.join(__dirname, 'logo.png'),
+					'wait': true
 				});
 				lastName = name
 			}
@@ -102,6 +103,11 @@ function watchChange() {
 		}
 	})
 }
+
+notifier.on('click', function(e, options){
+	debugLog('User closed notification.')
+	// @TODO - to be implemented
+})
 
 
 
